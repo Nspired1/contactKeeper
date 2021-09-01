@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 mongoose.Promise = Promise;
-mongoose.set("debug", true);
+mongoose.set("debug", true); //only for development. Otherwise set to false
+
 mongoose.connect(process.env.MONGO_ATLAS_URI, {
     keepAlive: true,
     useNewUrlParser: true,
