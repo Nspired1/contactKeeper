@@ -11,6 +11,7 @@ const Contacts = () => {
     return <h4>Please add a contact.</h4>;
   }
 
+  // simply sort to sort contacts by name
   const compare = (a, b) => {
     if (a.name < b.name) {
       return -1;
